@@ -1,0 +1,325 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  color: white;
+}
+#contenedorPadre {
+  display: flex;
+}
+#contenedorPadre #indice {
+  background-color: #064635;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0px;
+  height: 100vh;
+  width: 22%;
+  overflow: auto;
+}
+#contenedorPadre #indice::-webkit-scrollbar {
+  display: none;
+}
+#contenedorPadre #indice #perfil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+#contenedorPadre #indice #perfil img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+}
+#contenedorPadre #indice #perfil h2 {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 30px;
+}
+#contenedorPadre #indice #perfil h3 {
+  text-align: center;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: lighter;
+}
+#contenedorPadre #indice #botones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 50px;
+}
+#contenedorPadre #indice #botones .indiceClick {
+  width: 100%;
+  font-size: 18px;
+  font-weight: bold;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+#contenedorPadre #indice #botones .indiceClick:hover {
+  background-color: white;
+}
+#contenedorPadre #indice #botones .indiceClick:hover p {
+  color: #064635;
+}
+#contenedorPadre #indice #botones #sobreMiIndice,
+#contenedorPadre #indice #botones #habilidadesIndice {
+  border-style: solid;
+  border-width: 2px 0;
+}
+#contenedorPadre #indice #botones #contactameIndice {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+}
+#contenedorPadre #indice #redes {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  margin-bottom: 50px;
+}
+#contenedorPadre #indice #redes a {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 12px;
+  text-decoration: none;
+}
+#contenedorPadre #indice #redes a:hover {
+  background-color: white;
+  color: #064635;
+}
+#contenedorPadre #indice #footer {
+  padding: 40px 0;
+  text-align: center;
+  border-top: 1px solid rgba(250, 250, 250, 0.1);
+}
+#contenedorPadre #cuerpo {
+  background: #f4eea9;
+  background-size: cover;
+  height: 100vh;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 78%;
+}
+#contenedorPadre #cuerpo .disenoGeneralCuerpo {
+  width: 93%;
+  padding: 70px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#contenedorPadre #cuerpo .disenoGeneralCuerpo h1 {
+  font-size: 40px;
+  color: black;
+}
+#contenedorPadre #cuerpo .disenoGeneralCuerpo p {
+  font-size: 18px;
+  margin-bottom: 50px;
+  color: black;
+}
+#contenedorPadre #cuerpo .disenoGeneralCuerpo .subrayado {
+  background-color: #064635;
+  height: 4px;
+  margin: 10px 0;
+  width: 7%;
+}
+#contenedorPadre #cuerpo #sobreMi {
+  border-bottom: 3px solid #f0bb62;
+}
+#contenedorPadre #cuerpo #sobreMi p {
+  margin-bottom: 0;
+}
+#contenedorPadre #cuerpo #proyectos {
+  border-bottom: 3px solid #f0bb62;
+}
+#contenedorPadre #cuerpo #proyectos #contenedorProyectos {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+#contenedorPadre #cuerpo #proyectos #contenedorProyectos .fondoImg {
+  width: 431px;
+  height: 220px;
+  transition: transform 0.8s;
+}
+#contenedorPadre #cuerpo #proyectos #contenedorProyectos .fondoImg:hover {
+  transform: scale(1.2, 1.2);
+}
+#contenedorPadre #cuerpo #proyectos #contenedorProyectos .fondoImg .textoDentroImg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(81, 146, 89, 0.7);
+  transition: background-color 0.8s;
+}
+#contenedorPadre #cuerpo #proyectos #contenedorProyectos .fondoImg .textoDentroImg h3 {
+  font-size: 30px;
+  color: white;
+}
+#contenedorPadre #cuerpo #proyectos #contenedorProyectos .fondoImg .textoDentroImg div,
+#contenedorPadre #cuerpo #proyectos #contenedorProyectos .fondoImg .textoDentroImg button {
+  color: white;
+  display: none;
+}
+#contenedorPadre #cuerpo #proyectos #contenedorProyectos .fondoImg .textoDentroImg button {
+  color: white;
+  background-color: #f0bb62;
+  border-radius: 5px;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+#contenedorPadre #cuerpo #proyectos #contenedorProyectos .fondoImg .textoDentroImg button:hover {
+  background-color: white;
+  color: #f0bb62;
+}
+#contenedorPadre #cuerpo #proyectos #contenedorProyectos .fondoImg .textoDentroImg:hover {
+  background-color: rgba(81, 146, 89, 0);
+}
+#contenedorPadre #cuerpo #proyectos #contenedorProyectos .fondoImg .textoDentroImg:hover div,
+#contenedorPadre #cuerpo #proyectos #contenedorProyectos .fondoImg .textoDentroImg:hover button {
+  display: block;
+}
+#contenedorPadre #cuerpo #proyectos #contenedorProyectos #proyecto1 {
+  background: url(/dist/imgs/weather_app.PNG);
+}
+#contenedorPadre #cuerpo #habilidades {
+  border-bottom: 3px solid #f0bb62;
+}
+#contenedorPadre #cuerpo #habilidades #contenedorHabilidades {
+  width: 100%;
+}
+#contenedorPadre #cuerpo #habilidades #contenedorHabilidades .categoriasHabilidades {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 65px;
+  padding: 5px;
+  border: 3px solid #519259;
+}
+#contenedorPadre #cuerpo #habilidades #contenedorHabilidades .categoriasHabilidades .nombreCateg {
+  font-size: 30px;
+  color: black;
+}
+#contenedorPadre #cuerpo #habilidades #contenedorHabilidades .categoriasHabilidades .tecnologia {
+  display: none;
+}
+#contenedorPadre #cuerpo #habilidades #contenedorHabilidades .categoriasHabilidades .tecnologia i {
+  font-size: 50px;
+}
+#contenedorPadre #cuerpo #habilidades #contenedorHabilidades .categoriasHabilidades .tecnologia h4 {
+  color: black;
+}
+#contenedorPadre #cuerpo #habilidades #contenedorHabilidades .categoriasHabilidades:hover .tecnologia {
+  display: block;
+}
+#contenedorPadre #cuerpo #habilidades #contenedorHabilidades .categoriasHabilidades:hover .nombreCateg {
+  display: none;
+}
+#contenedorPadre #cuerpo #habilidades #contenedorHabilidades #cat1,
+#contenedorPadre #cuerpo #habilidades #contenedorHabilidades #cat2,
+#contenedorPadre #cuerpo #habilidades #contenedorHabilidades #cat3,
+#contenedorPadre #cuerpo #habilidades #contenedorHabilidades #cat4,
+#contenedorPadre #cuerpo #habilidades #contenedorHabilidades #cat5,
+#contenedorPadre #cuerpo #habilidades #contenedorHabilidades #cat6,
+#contenedorPadre #cuerpo #habilidades #contenedorHabilidades #cat7,
+#contenedorPadre #cuerpo #habilidades #contenedorHabilidades #cat8 {
+  margin-bottom: 10px;
+}
+#contenedorPadre #cuerpo #contactame form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#contenedorPadre #cuerpo #contactame form div {
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+#contenedorPadre #cuerpo #contactame form div input {
+  padding: 10px;
+  width: 45%;
+  background-color: rgba(250, 250, 250, 0.3);
+  border-color: white;
+  border-style: solid;
+  color: black;
+  font-weight: bold;
+}
+#contenedorPadre #cuerpo #contactame form #asunto {
+  margin-bottom: 25px;
+  padding: 10px;
+  color: black;
+  background-color: rgba(250, 250, 250, 0.3);
+  border-style: solid;
+  border-color: white;
+  font-weight: bold;
+}
+#contenedorPadre #cuerpo #contactame form #mensaje {
+  margin-bottom: 25px;
+  color: black;
+  padding: 10px;
+  background-color: rgba(250, 250, 250, 0.3);
+  border-style: solid;
+  border-color: white;
+  font-weight: bold;
+}
+#contenedorPadre #cuerpo #contactame form #botonForm {
+  width: 15%;
+  align-self: center;
+  padding: 10px;
+  border: none;
+  background-color: #f0bb62;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+}
+#contenedorPadre #cuerpo #contactame form #botonForm:hover {
+  color: #f0bb62;
+  background-color: white;
+}
+#contenedorPadre .disenoDesClick {
+  background-color: white;
+}
+#contenedorPadre .disenoDesClick p {
+  color: #064635;
+}
+#modalProyect1 {
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(128, 128, 128, 0.205);
+  display: none;
+}
+#modalProyect1 div {
+  display: flex;
+  flex-direction: column;
+}
+#modalProyect1 div #closeModal1 {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 5px;
+  align-self: flex-end;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
+#modalProyect1 div #closeModal1:hover {
+  color: white;
+  background-color: black;
+}

@@ -1,0 +1,31 @@
+{
+  "name": "miportafolio",
+  "version": "1.0.0",
+  "description": "Portafolio Web con backend y conectado a una base de datos",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec node src/server.js",
+    "pro": "webpack --progress",
+    "less": "less-watch-compiler src/cliente/css src/cliente/css"
+  },
+  "author": "Henry Huamani",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "css-loader": "^6.5.1",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.2",
+    "html-webpack-plugin": "^5.5.0",
+    "less": "^4.1.2",
+    "less-watch-compiler": "^1.16.3",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.15",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.65.0",
+    "webpack-dev-middleware": "^5.3.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.9.1"
+  }
+}

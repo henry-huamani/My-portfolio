@@ -1,0 +1,325 @@
+*{
+	margin: 0;
+	padding: 0;
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
+
+#contenedorPadre{
+    display: flex;
+    #indice{
+        background-color: #064635;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0px;
+        height: 100vh;
+        width: 22%;
+        overflow: auto;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        #perfil{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 60px;
+            margin-bottom: 60px;
+            img{
+                width: 200px;
+                height: 200px;
+                border-radius: 100%;
+            }
+            h2{
+                margin-top: 40px;
+                text-align: center;
+                font-size: 30px;
+            }
+            h3{
+                text-align: center;
+                font-size: 16px;
+                font-style: italic;
+                font-weight: lighter;
+            }
+        }
+        #botones{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 50px;
+            .indiceClick{
+                width: 100%;
+                font-size: 18px;
+                font-weight: bold;
+                height: 70px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                cursor: pointer;
+                &:hover{
+                    background-color: white;
+                    p{
+                        color: #064635;
+                    }
+                }
+            }
+            #sobreMiIndice , #habilidadesIndice{
+                border-style: solid;
+                border-width: 2px 0;
+            }
+            #contactameIndice{
+                border-bottom-style: solid;
+                border-bottom-width: 2px;
+
+            }
+        }
+        #redes{
+            width: 100%;
+            text-align: center;
+            padding: 10px 0;
+            margin-bottom: 50px;
+            a{
+                background-color: rgba(0, 0, 0, 0.2);
+                padding: 12px;
+                text-decoration: none;
+                &:hover{
+                    background-color: white;
+                    color: #064635;
+                }
+            }
+        }
+        #footer{
+            padding: 40px 0;
+            text-align: center;
+            border-top: 1px solid rgba(250, 250, 250, 0.1);
+        }
+    }
+    #cuerpo{
+        background: rgb(244, 238, 169);
+        background-size: cover;
+        height: 100vh;
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 78%;
+        .disenoGeneralCuerpo{
+            width: 93%;
+            padding: 70px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h1{
+                font-size: 40px;
+                color: black;
+            }
+            p{
+                font-size: 18px;
+                margin-bottom: 50px;
+                color: black;
+            }
+            .subrayado{
+                background-color: #064635;
+                height: 4px;
+                margin: 10px 0;
+                width: 7%;
+            }
+        }
+        #sobreMi{
+            border-bottom: 3px solid rgb(240, 187, 98);
+            p{
+                margin-bottom: 0;
+            }
+        }
+        #proyectos{
+            border-bottom: 3px solid rgb(240, 187, 98);
+            #contenedorProyectos{
+                display: flex;
+                width: 100%;
+                justify-content: space-around;
+                .fondoImg{
+                    width: 431px;
+                    height: 220px;
+                    transition: transform 0.8s;
+                    &:hover{
+                        transform: scale(1.2, 1.2);
+                    }
+                    .textoDentroImg{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-around;
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgba(81, 146, 89, 0.7);
+                        transition: background-color 0.8s;
+                        h3{
+                            font-size: 30px;
+                            color: white;
+                        }
+                        div, button{
+                            color: white;
+                            display: none;
+                        }
+                        button{
+                            color: white;
+                            background-color: rgb(240, 187, 98);
+                            border-radius: 5px;
+                            padding: 10px;
+                            text-transform: uppercase;
+                            font-weight: bold;
+                            border: none;
+                            cursor: pointer;
+                            &:hover{
+                                background-color: white;
+                                color: rgb(240, 187, 98);
+                            }
+                        }
+                        &:hover{
+                            background-color: rgba(81, 146, 89, 0);
+                            div, button{
+                                display: block;
+                            }
+                        }
+                    }
+                }
+                #proyecto1{
+                    background: url(/dist/imgs/weather_app.PNG);
+                    
+                }
+                // Continuar con #proyecto2
+            }
+        }
+        #habilidades{
+            border-bottom: 3px solid rgb(240, 187, 98);
+            #contenedorHabilidades{
+                width: 100%;
+                .categoriasHabilidades{
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    width: 100%;
+                    height: 65px;
+                    padding: 5px;
+                    border: 3px solid rgb(81, 146, 89);
+                    .nombreCateg{
+                        font-size: 30px;
+                        color: black;
+                    }
+                    .tecnologia{
+                        display: none;
+                        i{
+                            font-size: 50px;
+                        }
+                        h4{
+                            color: black;
+                        }
+                    }
+                    &:hover{
+                        .tecnologia{
+                            display: block;
+                        }
+                        .nombreCateg{
+                            display: none;
+                        }
+                    }
+                }
+                #cat1, #cat2, #cat3, #cat4, #cat5, #cat6, #cat7, #cat8{
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        #contactame{
+            form{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                div{
+                    margin-bottom: 25px;
+                    display: flex;
+                    justify-content: space-between;
+                    input{
+                        padding: 10px;
+                        width: 45%;
+                        background-color: rgba(250,250,250,0.3);
+                        border-color: white;
+                        border-style: solid;
+                        color: black;
+                        font-weight: bold;
+                    }
+                }
+                #asunto{
+                    margin-bottom: 25px;
+                    padding: 10px;
+                    color: black;
+                    background-color: rgba(250,250,250,0.3);
+                    border-style: solid;
+                    border-color: white;
+                    font-weight: bold;
+                }
+                #mensaje{
+                    margin-bottom: 25px;
+                    color: black;
+                    padding: 10px;
+                    background-color: rgba(250,250,250,0.3);
+                    border-style: solid;
+                    border-color: white;
+                    font-weight: bold;
+                }
+                #botonForm{
+                    width: 15%;
+                    align-self: center;
+                    padding: 10px;
+                    border: none;
+                    background-color: rgb(240, 187, 98);
+                    color: white;
+                    border-radius: 5px;
+                    font-weight: bold;
+                    &:hover{
+                        color: rgb(240, 187, 98);
+                        background-color: white;
+                    }
+                }
+            }
+        }
+    }
+    .disenoDesClick{
+        background-color: white;
+            p{
+                color: #064635;
+            }
+    }
+}
+
+#modalProyect1{
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.205);
+    div{
+        display: flex;
+        flex-direction: column;
+        #closeModal1{
+            width: 2rem;
+            height: 2rem;
+            border-radius: 5px;
+            align-self: flex-end;
+            background-color: white;
+            color: black;
+            font-weight: bold;
+            &:hover{
+                color: white;
+                background-color: black;
+            }
+
+        }
+    }
+    display: none;
+}
