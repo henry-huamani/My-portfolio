@@ -9,7 +9,7 @@ require('dotenv').config();
 const {DB_HOST, DB_USER, DB_PASSWORD, DB_NAME} = process.env;
 
 var app = express();
-app.set('port',(process.env.PORT || 5000));
+app.set('port',(process.env.PORT));
 app.use(bodyParse.json());
 app.use(bodyParse.urlencoded({extended: true}));
 app.use('/static', express.static('dist'));
@@ -32,5 +32,5 @@ app.post('/api/contacto', function(req, res, next){
 });
 
 app.listen(app.get('port'), () => {
-    console.log('Active server on port 5000');
+    console.log(`Active server on port ${process.env.PORT}`);
 });
